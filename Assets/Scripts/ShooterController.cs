@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class ShooterController : MonoBehaviour
@@ -17,11 +18,13 @@ public class ShooterController : MonoBehaviour
 
     private void shoot()
     {
-
-        var instantiatedBullet = Instantiate(BulletPrefab, projectileSpawnPoint.transform.position, Quaternion.identity);
-
-        //set velocity
-        instantiatedBullet.GetComponent<Rigidbody2D>().linearVelocity = new Vector2(10f, 0f);
-        
+        //spawn bullet and rotate according to shooter rotation
+        var instantiatedBullet = Instantiate(BulletPrefab, projectileSpawnPoint.transform.position, gameObject.transform.rotation);
+        //set velocity of bullet based on direction shooter is facing
+        //quaternion to direction vector conversion
+        float degrees = gameObject.transform.eulerAngles.z * Mathf.Deg2Rad;
+        //calculate direction vector based off 
+        Vector2 direction = new Vector2(Mathf.Cos(degrees), Mathf.Sin(degrees));
+        instantiatedBullet.GetComponent<Rigidbody2D>().linearVelocity = direction * 5f;
     }
 }
