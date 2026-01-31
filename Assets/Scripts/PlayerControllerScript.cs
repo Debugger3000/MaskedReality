@@ -1,0 +1,105 @@
+using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.UI;
+
+public class PlayerControllerScript : MonoBehaviour
+{
+    // Movement parameters
+    public float moveSpeed = 5f;
+    public float jumpForce = 5.0f;
+
+    // Ground check parameters
+    public Transform groundCheck;
+    public float groundDistance = 0.4f;
+    public LayerMask groundMask;
+    bool isGrounded;
+
+    //other physics stuff
+    private Rigidbody2D rb;
+    private Vector2 movement;
+    private bool jumpTriggered = false;
+
+    //sprite stuff
+    private SpriteRenderer spriteRenderer;
+
+    //camera reference for culling masks
+    public CameraController camera;
+
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        camera = Camera.main.GetComponent<CameraController>();
+    }
+
+    private void FixedUpdate()
+    {
+        float moveX = movement.x * moveSpeed;
+        rb.linearVelocity = new Vector2(moveX, rb.linearVelocity.y);
+
+        //need this for ground check
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundDistance, groundMask);
+
+
+        //add is grounded to only jump on ground duh
+        if (jumpTriggered && isGrounded)
+        {
+            //reset my vertical velocity for consistent jumps
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
+            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        }   
+
+    }
+
+    public void OnMove(InputAction.CallbackContext context)
+    {
+        movement = context.ReadValue<Vector2>();
+        //Debug.Log(movement);
+    }
+
+    //For jumping duh
+    public void OnJump(InputAction.CallbackContext context)
+    {
+        if(context.started)
+        {
+            jumpTriggered = true;
+        }
+        else if (context.canceled)
+        {
+            jumpTriggered = false;
+        }
+    }
+
+    //For changing to red mask
+    public void OnRedMask(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            // Implement red mask functionality here
+            spriteRenderer.color = Color.red;
+            // Set the player layer to RedPlayer
+            gameObject.layer = LayerMask.NameToLayer("RedPlayer");
+            // Set ground jump mask to red ground
+            groundMask = LayerMask.GetMask("RedGround", "TrueGround");
+            //Set layers to cull from camera
+            camera.ToggleLayerVisibility(LayerMask.NameToLayer("RedGround"), LayerMask.NameToLayer("GreenGround"));
+
+        }
+    }
+
+    //Same thing but for green mask
+    public void OnGreenMask(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            // Implement green mask functionality here
+            spriteRenderer.color = Color.green;
+            // Sets the player layer to GreenPlayer
+            gameObject.layer = LayerMask.NameToLayer("GreenPlayer");
+            // Set ground jump mask to green ground
+            groundMask = LayerMask.GetMask("GreenGround", "TrueGround");
+            //Set layers to cull from camera
+            camera.ToggleLayerVisibility(LayerMask.NameToLayer("GreenGround"), LayerMask.NameToLayer("RedGround"));
+        }
+    }
+}
