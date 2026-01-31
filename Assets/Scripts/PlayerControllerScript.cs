@@ -10,7 +10,8 @@ public class PlayerControllerScript : MonoBehaviour
 
     // Ground check parameters
     public Transform groundCheck;
-    public float groundDistance = 0.4f;
+    public float groundCheckWidth = 0.4f;
+    public float groundCheckHeight = 0.4f;
     public LayerMask groundMask;
     bool isGrounded;
 
@@ -31,7 +32,7 @@ public class PlayerControllerScript : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         camera = Camera.main.GetComponent<CameraController>();
     }
 
@@ -40,8 +41,9 @@ public class PlayerControllerScript : MonoBehaviour
         float moveX = movement.x * moveSpeed;
         rb.linearVelocity = new Vector2(moveX, rb.linearVelocity.y);
 
-        //need this for ground check
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundDistance, groundMask);
+        //need this for ground check. Using overlapbox for more reliable ground detection
+        isGrounded = Physics2D.OverlapBox(groundCheck.position, new Vector2(groundCheckWidth, groundCheckHeight), 0f, groundMask);
+        //isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundDistance, groundMask);
 
 
         //add is grounded to only jump on ground duh
@@ -52,6 +54,13 @@ public class PlayerControllerScript : MonoBehaviour
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }   
 
+    }
+
+    public void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        //drawing ground check box
+        Gizmos.DrawWireCube(groundCheck.position, new Vector2(groundCheckWidth, groundCheckHeight));
     }
 
     public void OnMove(InputAction.CallbackContext context)
