@@ -5,11 +5,6 @@ public class WorldHazardController : MonoBehaviour
 {
     public GameObject onDeathEffectBlood;
 
-    void Awake()
-    {
-        
-    }
-
     void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Player"))

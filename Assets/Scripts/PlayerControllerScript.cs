@@ -25,6 +25,9 @@ public class PlayerControllerScript : MonoBehaviour
     //camera reference for culling masks
     public new CameraController camera;
 
+    public bool hasRedMask = false;
+    public bool hasGreenMask = false;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -73,7 +76,7 @@ public class PlayerControllerScript : MonoBehaviour
     //For changing to red mask
     public void OnRedMask(InputAction.CallbackContext context)
     {
-        if (context.started)
+        if (context.started && hasRedMask)
         {
             // Implement red mask functionality here
             spriteRenderer.color = Color.red;
@@ -90,7 +93,7 @@ public class PlayerControllerScript : MonoBehaviour
     //Same thing but for green mask
     public void OnGreenMask(InputAction.CallbackContext context)
     {
-        if (context.started)
+        if (context.started && hasGreenMask)
         {
             // Implement green mask functionality here
             spriteRenderer.color = Color.green;
