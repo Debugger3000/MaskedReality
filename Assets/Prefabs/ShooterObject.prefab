@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5378908199555472147}
-  m_Layer: 13
+  m_Layer: 7
   m_Name: ProjectileSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1467055933721428861}
   - component: {fileID: 5270997990519864497}
-  m_Layer: 13
+  m_Layer: 7
   m_Name: ShooterModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,7 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7440467596887038018}
   - component: {fileID: 1846062957917504954}
-  m_Layer: 13
+  m_Layer: 7
   m_Name: ShooterObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,3 +168,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e42a6db7040e30a4684d00d28989e991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  BulletPrefab: {fileID: 6062763290268368166, guid: 14e3d6cc55853a541911153c4e3b79f2, type: 3}
+  projectileSpawnPoint: {fileID: 2355181876349367731}

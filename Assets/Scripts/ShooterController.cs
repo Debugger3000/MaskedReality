@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ShooterController : MonoBehaviour
@@ -26,5 +27,9 @@ public class ShooterController : MonoBehaviour
         //calculate direction vector based off 
         Vector2 direction = new Vector2(Mathf.Cos(degrees), Mathf.Sin(degrees));
         instantiatedBullet.GetComponent<Rigidbody2D>().linearVelocity = direction * 5f;
+        //set bullet layer to match shooter layer
+        instantiatedBullet.layer = gameObject.layer;
+        //set child bulletModel layer to match shooter layer
+        instantiatedBullet.transform.GetChild(0).gameObject.layer = gameObject.layer;
     }
 }
