@@ -23,7 +23,7 @@ public class PlayerControllerScript : MonoBehaviour
     private SpriteRenderer spriteRenderer;
 
     //camera reference for culling masks
-    public CameraController camera;
+    public new CameraController camera;
 
     private void Awake()
     {
