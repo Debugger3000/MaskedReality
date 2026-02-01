@@ -34,6 +34,9 @@ public class PlayerControllerScript : MonoBehaviour
     public bool hasRedMask = false;
     public bool hasGreenMask = false;
 
+    public GameObject RedtoGreenPrefab;
+    public GameObject GreentoRedPrefab;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -134,6 +137,7 @@ public class PlayerControllerScript : MonoBehaviour
             //Change TrueProjectile layer to collide with red ground
             Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("TrueProjectile"), LayerMask.NameToLayer("GreenGround"), true);
             Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("TrueProjectile"), LayerMask.NameToLayer("RedGround"), false);
+            Instantiate(GreentoRedPrefab, groundCheck.position + Vector3.up * 0.5f, Quaternion.identity);
 
 
         }
@@ -156,7 +160,7 @@ public class PlayerControllerScript : MonoBehaviour
             //Change TrueProjectile layer to collide with green ground
             Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("TrueProjectile"), LayerMask.NameToLayer("RedGround"), true);
             Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("TrueProjectile"), LayerMask.NameToLayer("GreenGround"), false);
-            
+            Instantiate(RedtoGreenPrefab, groundCheck.position + Vector3.up * 0.5f, Quaternion.identity);
         }
     }
 }
