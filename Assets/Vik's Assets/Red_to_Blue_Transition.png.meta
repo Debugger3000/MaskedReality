@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: 074cbdaab040540628e907a3ffe620ea
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 777487624330700236
+    second: Red_to_Blue_Transition_0
+  - first:
+      213: -6629136165346108362
+    second: Red_to_Blue_Transition_1
+  - first:
+      213: -4211180330781645847
+    second: Red_to_Blue_Transition_2
+  - first:
+      213: -6802219116184030392
+    second: Red_to_Blue_Transition_3
+  - first:
+      213: 6647578014926608647
+    second: Red_to_Blue_Transition_4
+  - first:
+      213: 5904081935042716578
+    second: Red_to_Blue_Transition_5
+  - first:
+      213: 6572999236512861703
+    second: Red_to_Blue_Transition_6
+  - first:
+      213: -3536431799881318324
+    second: Red_to_Blue_Transition_7
+  - first:
+      213: -4010798213104862368
+    second: Red_to_Blue_Transition_8
+  - first:
+      213: -8204896037037659931
+    second: Red_to_Blue_Transition_9
+  - first:
+      213: -8750540493153090445
+    second: Red_to_Blue_Transition_10
+  - first:
+      213: 3490937028333327625
+    second: Red_to_Blue_Transition_11
+  - first:
+      213: 78379084284234590
+    second: Red_to_Blue_Transition_12
+  - first:
+      213: 6916149208794912099
+    second: Red_to_Blue_Transition_13
+  - first:
+      213: 5681523909908329581
+    second: Red_to_Blue_Transition_14
+  - first:
+      213: 6697558911559452900
+    second: Red_to_Blue_Transition_15
+  - first:
+      213: -1751295370925131855
+    second: Red_to_Blue_Transition_16
+  - first:
+      213: -231684108403121600
+    second: Red_to_Blue_Transition_17
+  - first:
+      213: 9181925741649080153
+    second: Red_to_Blue_Transition_18
+  - first:
+      213: -2082206373123231001
+    second: Red_to_Blue_Transition_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Red_to_Blue_Transition_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc56e7100e03aca00800000000000000
+      internalID: 777487624330700236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_to_Blue_Transition_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63c99d0c7c39004a0800000000000000
+      internalID: -6629136165346108362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_to_Blue_Transition_2
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e3e5aa0dc1ee85c0800000000000000
+      internalID: -4211180330781645847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_to_Blue_Transition_3
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 843ba77e0c9a991a0800000000000000
+      internalID: -6802219116184030392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_to_Blue_Transition_4
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7099564fbf0f04c50800000000000000
+      internalID: 6647578014926608647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_to_Blue_Transition_5
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a3a50f1d338fe150800000000000000
+      internalID: 5904081935042716578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_to_Blue_Transition_6
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 1
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70e4349fafbf73b50800000000000000
+      internalID: 6572999236512861703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_to_Blue_Transition_7
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 1
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c40cdabc3021ceec0800000000000000
+      internalID: -3536431799881318324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_to_Blue_Transition_8
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 1
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06bfc1a7648c658c0800000000000000
+      internalID: -4010798213104862368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_to_Blue_Transition_9
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 1
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e82c55968a522e80800000000000000
+      internalID: -8204896037037659931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_to_Blue_Transition_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37440f8a8c5df8680800000000000000
+      internalID: -8750540493153090445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_to_Blue_Transition_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 905d0134bbc427030800000000000000
+      internalID: 3490937028333327625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_to_Blue_Transition_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5b0594ac55761100800000000000000
+      internalID: 78379084284234590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_to_Blue_Transition_13
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 365d1d3ef091bff50800000000000000
+      internalID: 6916149208794912099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_to_Blue_Transition_14
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6479f0e4e3d8de40800000000000000
+      internalID: 5681523909908329581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_to_Blue_Transition_15
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e8c0c9485282fc50800000000000000
+      internalID: 6697558911559452900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_to_Blue_Transition_16
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b7b83f832622b7e0800000000000000
+      internalID: -1751295370925131855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_to_Blue_Transition_17
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 1
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 042678ae784e8ccf0800000000000000
+      internalID: -231684108403121600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_to_Blue_Transition_18
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95f220960d0cc6f70800000000000000
+      internalID: 9181925741649080153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_to_Blue_Transition_19
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 1
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e27fece5548a13e0800000000000000
+      internalID: -2082206373123231001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Red_to_Blue_Transition_0: 777487624330700236
+      Red_to_Blue_Transition_1: -6629136165346108362
+      Red_to_Blue_Transition_10: -8750540493153090445
+      Red_to_Blue_Transition_11: 3490937028333327625
+      Red_to_Blue_Transition_12: 78379084284234590
+      Red_to_Blue_Transition_13: 6916149208794912099
+      Red_to_Blue_Transition_14: 5681523909908329581
+      Red_to_Blue_Transition_15: 6697558911559452900
+      Red_to_Blue_Transition_16: -1751295370925131855
+      Red_to_Blue_Transition_17: -231684108403121600
+      Red_to_Blue_Transition_18: 9181925741649080153
+      Red_to_Blue_Transition_19: -2082206373123231001
+      Red_to_Blue_Transition_2: -4211180330781645847
+      Red_to_Blue_Transition_3: -6802219116184030392
+      Red_to_Blue_Transition_4: 6647578014926608647
+      Red_to_Blue_Transition_5: 5904081935042716578
+      Red_to_Blue_Transition_6: 6572999236512861703
+      Red_to_Blue_Transition_7: -3536431799881318324
+      Red_to_Blue_Transition_8: -4010798213104862368
+      Red_to_Blue_Transition_9: -8204896037037659931
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

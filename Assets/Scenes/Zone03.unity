@@ -8991,7 +8991,7 @@ PrefabInstance:
       objectReference: {fileID: 6062763290268368166, guid: 14e3d6cc55853a541911153c4e3b79f2, type: 3}
     - target: {fileID: 1846062957917504954, guid: c96005f06cdb0b24bb59bc1686427e27, type: 3}
       propertyPath: shootInterval
-      value: 0.5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1846062957917504954, guid: c96005f06cdb0b24bb59bc1686427e27, type: 3}
       propertyPath: projectileSpawnPoint
