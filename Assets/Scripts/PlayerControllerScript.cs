@@ -34,6 +34,10 @@ public class PlayerControllerScript : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         camera = Camera.main.GetComponent<CameraController>();
+
+        //set true projectiles collision off at start
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("TrueProjectile"), LayerMask.NameToLayer("GreenGround"), false);
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("TrueProjectile"), LayerMask.NameToLayer("RedGround"), false);
     }
 
     private void FixedUpdate()
@@ -95,6 +99,11 @@ public class PlayerControllerScript : MonoBehaviour
             groundMask = LayerMask.GetMask("RedGround", "TrueGround");
             //Set layers to cull from camera
             camera.ToggleLayerVisibility(LayerMask.NameToLayer("RedGround"), LayerMask.NameToLayer("GreenGround"));
+            camera.ToggleLayerVisibility(LayerMask.NameToLayer("RedProjectile"), LayerMask.NameToLayer("GreenProjectile"));
+            //Change TrueProjectile layer to collide with red ground
+            Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("TrueProjectile"), LayerMask.NameToLayer("GreenGround"), true);
+            Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("TrueProjectile"), LayerMask.NameToLayer("RedGround"), false);
+
 
         }
     }
@@ -112,6 +121,11 @@ public class PlayerControllerScript : MonoBehaviour
             groundMask = LayerMask.GetMask("GreenGround", "TrueGround");
             //Set layers to cull from camera
             camera.ToggleLayerVisibility(LayerMask.NameToLayer("GreenGround"), LayerMask.NameToLayer("RedGround"));
+            camera.ToggleLayerVisibility(LayerMask.NameToLayer("GreenProjectile"), LayerMask.NameToLayer("RedProjectile"));
+            //Change TrueProjectile layer to collide with green ground
+            Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("TrueProjectile"), LayerMask.NameToLayer("RedGround"), true);
+            Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("TrueProjectile"), LayerMask.NameToLayer("GreenGround"), false);
+            
         }
     }
 }
