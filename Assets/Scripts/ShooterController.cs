@@ -10,11 +10,15 @@ public class ShooterController : MonoBehaviour
 
     public GameObject projectileSpawnPoint;
 
-    private float shootInterval = 2f;
+    [SerializeField]
+    public float shootInterval = 2f;
+
+    [SerializeField]
+    public float shootDelay = 2f;
 
     private void Awake()
     {
-        InvokeRepeating("shoot", shootInterval, shootInterval);
+        InvokeRepeating("shoot", shootDelay, shootInterval);
     }
 
     private void shoot()
