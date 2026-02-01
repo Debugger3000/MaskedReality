@@ -15,7 +15,6 @@ public class BulletHazardController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         boxCollider = GetComponent<BoxCollider2D>();
-        currentLayerCollider = Camera.main.GetComponent<CameraController>().getCurrentMask();
     }
     void OnCollisionEnter2D(Collision2D other)
     {
