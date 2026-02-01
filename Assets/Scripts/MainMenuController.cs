@@ -13,11 +13,8 @@ public class MainMenuController : MonoBehaviour
 
     public void playGame() {
 
-        // change to next scene
-
-        // deubg
-        Debug.Log("play game pressed...");
-
+        // change to next scene using scene name
+        SceneManager.LoadScene("Zone01_Remake");
     }
 
     // Update is called once per frame
