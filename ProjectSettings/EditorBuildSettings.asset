@@ -5,9 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 04183a15acb7f4d8798c07acc82858b3
   - enabled: 1
     path: Assets/Scenes/Zone01_Remake.unity
     guid: c1eccd8d587fc76cb84c28c776eec0e0
@@ -18,11 +18,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Zone-02-carter.unity
     guid: 69f544580eb47e446826c75314183e21
   - enabled: 1
-    path: Assets/Scenes/Zone03.unity
-    guid: 6caf3be07579ceab3af4439a9aed7ffc
-  - enabled: 1
     path: Assets/Scenes/Trackman-zone.unity
     guid: 818a38521d9b8be46a67691940370b9d
+  - enabled: 1
+    path: Assets/Scenes/Zone03.unity
+    guid: 6caf3be07579ceab3af4439a9aed7ffc
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
