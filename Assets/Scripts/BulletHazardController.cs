@@ -9,10 +9,13 @@ public class BulletHazardController : MonoBehaviour
     private Rigidbody2D rb;
     private BoxCollider2D boxCollider;
 
+    private LayerMask currentLayerCollider;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         boxCollider = GetComponent<BoxCollider2D>();
+        currentLayerCollider = Camera.main.GetComponent<CameraController>().getCurrentMask();
     }
     void OnCollisionEnter2D(Collision2D other)
     {
@@ -28,7 +31,7 @@ public class BulletHazardController : MonoBehaviour
 
             Invoke("Kill", 1f);
         }
-        else if (other.gameObject.layer == LayerMask.NameToLayer("TrueGround") ) 
+        else
         {
             boxCollider.enabled = false;
             Destroy(bulletModel);
