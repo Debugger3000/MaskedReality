@@ -16,9 +16,38 @@ public class ShooterController : MonoBehaviour
     [SerializeField]
     public float shootDelay = 2f;
 
+    public bool aimsAtPlayer;
+
+    public bool usesColliderTrigger;
+
+    public bool isTriggered = false;
+
     private void Awake()
     {
-        InvokeRepeating("shoot", shootDelay, shootInterval);
+        //start shooting immediately if not using collider trigger
+        if (!usesColliderTrigger)
+        {
+            InvokeRepeating("shoot", shootDelay, shootInterval);
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        //rotate to face player
+        GameObject player = GameObject.FindWithTag("Player");
+        if (player != null && aimsAtPlayer)
+        {
+            Vector3 direction = player.transform.position - transform.position;
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+        }
+
+        //start shooting if triggered by collider
+        if (usesColliderTrigger && isTriggered)
+        {
+            InvokeRepeating("shoot", shootDelay, shootInterval);
+            isTriggered = false; //reset trigger to avoid multiple invocations
+        }
     }
 
     private void shoot()
