@@ -22,6 +22,11 @@ public class PlayerControllerScript : MonoBehaviour
 
     //sprite stuff
     private SpriteRenderer spriteRenderer;
+    private Animator animator;
+    public float afkDelay = 3f;
+    private float idleTimer = 0f;
+    private const string AnimIsMoving = "isMoving";
+    private const string AnimIsAfk = "isAfk";
 
     //camera reference for culling masks
     public new CameraController camera;
@@ -33,6 +38,7 @@ public class PlayerControllerScript : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        animator = GetComponentInChildren<Animator>();
         camera = Camera.main.GetComponent<CameraController>();
 
         //set true projectiles collision off at start
@@ -40,10 +46,35 @@ public class PlayerControllerScript : MonoBehaviour
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("TrueProjectile"), LayerMask.NameToLayer("RedGround"), false);
     }
 
+    private void Update()
+    {
+        bool isMovingNow = movement.sqrMagnitude > 0.001f;
+
+        if (isMovingNow)
+        {
+            idleTimer = 0f;
+        }
+        else
+        {
+            idleTimer += Time.deltaTime;
+        }
+
+        if (animator != null)
+        {
+            animator.SetBool(AnimIsMoving, isMovingNow);
+            animator.SetBool(AnimIsAfk, !isMovingNow && idleTimer >= afkDelay);
+        }
+    }
+
     private void FixedUpdate()
     {
         float moveX = movement.x * moveSpeed;
         rb.linearVelocity = new Vector2(moveX, rb.linearVelocity.y);
+
+        if (movement.x != 0f)
+        {
+            spriteRenderer.flipX = movement.x < 0f;
+        }
 
         //need this for ground check. Using overlapbox for more reliable ground detection
         isGrounded = Physics2D.OverlapBox(groundCheck.position, new Vector2(groundCheckWidth, groundCheckHeight), 0f, groundMask);
@@ -114,7 +145,7 @@ public class PlayerControllerScript : MonoBehaviour
         if (context.started && hasGreenMask)
         {
             // Implement green mask functionality here
-            spriteRenderer.color = Color.green;
+            spriteRenderer.color = Color.cyan;
             // Sets the player layer to GreenPlayer
             gameObject.layer = LayerMask.NameToLayer("GreenPlayer");
             // Set ground jump mask to green ground
