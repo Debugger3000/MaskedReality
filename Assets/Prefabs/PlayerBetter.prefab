@@ -250,6 +250,8 @@ MonoBehaviour:
   camera: {fileID: 0}
   hasRedMask: 1
   hasGreenMask: 1
+  RedtoGreenPrefab: {fileID: 1508795298774166214, guid: 5167abff0f7a0a349a4a228fdafc9f35, type: 3}
+  GreentoRedPrefab: {fileID: 4942985278905543864, guid: 35433a915ba74ba43b41171839717daa, type: 3}
 --- !u!60 &2287821973556716539
 PolygonCollider2D:
   m_ObjectHideFlags: 0
