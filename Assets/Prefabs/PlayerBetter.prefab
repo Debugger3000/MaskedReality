@@ -221,6 +221,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: dcb5a076-c57d-4ab4-a33f-1b4684eb4a8a
     m_ActionName: 'WorldMasks/GreenMask[/Keyboard/2]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4283953570286845805}
+        m_TargetAssemblyTypeName: PlayerControllerScript, Assembly-CSharp
+        m_MethodName: OnRestart
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 77954453-3502-4303-9c9a-f4a6f5c4bdbf
+    m_ActionName: 'Player/Restart Map[/Keyboard/r]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: 

@@ -2525,6 +2525,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerBetter
       objectReference: {fileID: 0}
+    - target: {fileID: 7751358251279846441, guid: 641ea729b7e40cb4abfd733b708b517b, type: 3}
+      propertyPath: m_ActionEvents.Array.data[21].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 948311060}
     - target: {fileID: 7964581629475963989, guid: 641ea729b7e40cb4abfd733b708b517b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -16
@@ -5963,6 +5967,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2355181876349367731, guid: c96005f06cdb0b24bb59bc1686427e27, type: 3}
   m_PrefabInstance: {fileID: 1141419283}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &948311060 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4283953570286845805, guid: 641ea729b7e40cb4abfd733b708b517b, type: 3}
+  m_PrefabInstance: {fileID: 643701053}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b81eb6ed5ad37a428d67d191a2854a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerControllerScript
 --- !u!1 &981339188 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8333955884524574835, guid: c96005f06cdb0b24bb59bc1686427e27, type: 3}

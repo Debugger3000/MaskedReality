@@ -163,4 +163,12 @@ public class PlayerControllerScript : MonoBehaviour
             Instantiate(RedtoGreenPrefab, groundCheck.position + Vector3.up * 0.5f, Quaternion.identity);
         }
     }
+
+    public void OnRestart(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+        }
+    }
 }
