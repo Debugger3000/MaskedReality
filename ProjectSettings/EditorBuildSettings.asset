@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Zone02.unity
     guid: 53cc6b1cd28c0d244b8024c2b36522eb
   - enabled: 1
+    path: Assets/Scenes/Zone-02-carter.unity
+    guid: 69f544580eb47e446826c75314183e21
+  - enabled: 1
     path: Assets/Scenes/Zone03.unity
     guid: 6caf3be07579ceab3af4439a9aed7ffc
   - enabled: 1
