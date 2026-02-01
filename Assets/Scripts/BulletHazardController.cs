@@ -6,6 +6,9 @@ public class BulletHazardController : MonoBehaviour
     public GameObject onDeathEffectBlood;
     public GameObject bulletModel;
 
+    public AudioSource audioSource;
+    public AudioClip deathClip;
+
     private Rigidbody2D rb;
     private BoxCollider2D boxCollider;
 
@@ -20,6 +23,13 @@ public class BulletHazardController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+
+            //play death audio
+            if (deathClip != null)
+            {
+                audioSource.PlayOneShot(deathClip);
+            }
+
             Destroy(other.gameObject);
             Destroy(bulletModel);
 
